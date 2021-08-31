@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.nav_li li a {
+  text-decoration: none;
+  color: rgb(30,129,176);
+  display: block;
+  padding: 10px 25px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav {
+  top: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  text-align: right;
+  background-color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 1;
+  border-radius: 125px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  width: auto;
+  float: left;
+  padding-left: 20px;
+}
+
+.nav_li li a:hover {
+  background-color: rgb(30,129,176);
+  color: white;
+  font-size: 17px;
+  border-radius: 125px;
+}
+
+/* slideshow container */
+.slideshow_container {
+  position: relative;
+  width: 100%;
+  border: 5px solid black;
+  justify-content: center;
+  margin-top: 89px; 
+}
+
+
+/* Hide the images by default */
+.adsSlides {
+  display: none;
+  transition: 0.5s;
+}
+
+.adsSlides:hover {
+  transform: scale(0.98);
+}
+
+/* Next & previous buttons */
+.previous, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.previous:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.advertisement_text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Create four equal columns that floats next to each other */
+.categories_row {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.categories_row h3 {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: 100px;
+  margin-bottom: 5px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.categories_column {
+  float: left;
+  width: 24%;
+  padding: 10px;
+  margin-right: 1.05em;
+  background-color: white;
+  text-align: center;
+  border: 3px solid black;
+}
+
+.categories_column1 {
+  float: left;
+  width: 24%;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  border: 3px solid black;
+}
+
+.categories_column p, .categories_column1 p {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.categories_column1:hover p, .categories_column:hover p {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
+/* Slow-motion Zoom Container */
+.categories_column1, .categories_column {
+  transform-origin: 50% 65%;
+  transition: transform 0.3s, filter 3s ;
+}
+
+.categories_column1 img, .categories_column img {
+  transform-origin: 50% 65%;
+  transition: transform 0.3s, filter 3s ;
+}
+
+/* The Transformation */
+.categories_column1:hover, .categories_column:hover {
+  transform: scale(1.07);
+}
+
+/* The Categories Text */
+.categories_column a .categories_column {
+  text-decoration: none;
+}
+
+/* Slow-motion Zoom Container */
+.categories_column1 img, .categories_column img {
+  transform-origin: 50% 65%;
+  transition: transform 2s, filter 3s ease-in-out;
+}
+
+/* The Transformation */
+.categories_column:hover img, .categories_column1:hover img {
+  transform: scale(1.07);
+}
+
+.container h3 {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 15%;
+  margin: 400px 70px 0px 90px;
+  font-family: 'Poppins',sans-serif;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0; /* can delete */
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: white;
+  padding: 100px 0px 30px;
+  border-radius: 100px 100px 0px 0px;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.rowFooter {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.colFooter {
+  flex-basis: 25%;
+  padding: 10px 30px;
+}
+
+.rowFooter .colFooter h3 {
+  width: fit-content;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.colFooter ul li {
+  list-style: none;
+}
+
+.colFooter ul li a {
+  text-decoration: none;
+  right: 40px;
+  position: relative;
+}
